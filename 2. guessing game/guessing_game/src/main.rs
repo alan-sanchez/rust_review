@@ -1,6 +1,13 @@
 // // To obtain user input and then print the result as output, we need to bring the io 
-// // input/output library into scope. The io library comes from the standard library, known as std:
+// // input/output library into scope. The io library comes from the standard library, known as std
 use std::io;
+
+
+// // The Rng trait defines methods that random number generators implement, and this 
+// // trait must be in scope for us to use those methods
+use rand::Rng;
+
+
 
 // // The main function is the entry point into the program 
 // // The `fn` syntax delcares a new function;; the parentheses, (), indicate no parameters
@@ -8,6 +15,15 @@ fn main() {
 
     // // println! is a macro that prints a string to the screen
     println!("Guess the number!");
+
+    // // In the first line, we call the rand::rng function that gives us the particular random 
+    // // number generator we’re going to use
+    // // 
+    // // Then we call the random_range method on the random number generator. This method is defined by 
+    // // the Rng trait that we brought into scope with the use rand::rng
+    let secret_number = rand::rng().random_range(1..=100);
+
+    println!("The secret number is: {secret_number}");
 
     println!("Please input your guess.");
 
@@ -22,7 +38,7 @@ fn main() {
     // // There is the io module (I think similar to a class) that calls the `stdin` function,
     // // which allows to handle user input
     io::stdin()
-        // // `read_line` is a method on the standard input handl to get input from the user
+        // // `read_line` is a method on the standard input handle to get input from the user
         // // We're also passing &mut guess as the argument to read_line to tell it what string to stroe the user input in
         // // the `&` indicates that this argument is a reference to the variable guess
         .read_line(&mut guess)
