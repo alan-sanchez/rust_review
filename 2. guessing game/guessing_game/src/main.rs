@@ -54,7 +54,13 @@ fn main() {
         // // `trim()` removes any leading and trailing whitespace
         // // Since we assigned the result to `let guess: u32`, Rust infers that `parse()` should convert the string to a u32
         // // `.expect()` will terminate the program if the converstion failes and display the text message inside
-        let guess: u32 = guess.trim().parse().expect("Please type a number!");
+        // let guess: u32 = guess.trim().parse().expect("Please type a number!");
+
+        // // Same as line 57, but a different way to hand invalid input
+        let guess: u32 = match guess.trim().parse() {
+            Ok(num) => num,
+            Err(_) => continue,
+        };
 
         println!("You guessed: {}", guess);
 
