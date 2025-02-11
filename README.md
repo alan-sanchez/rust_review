@@ -1,0 +1,27 @@
+# Rust Tutorial Examples 🚀
+
+This repository contains my solutions, experiments, and notes while working through [The Rust Programming Language Book](https://doc.rust-lang.org/book/). It serves as a personal reference and a resource for anyone learning Rust.
+
+## 📖 About This Repository
+This repo includes Rust code examples, exercises, and projects from **The Rust Programming Language Book**. Each section is structured to follow the book’s chapters, making it easy to track progress and revisit concepts.
+
+
+## 🚀 Getting Started
+To run the examples locally, ensure you have Rust installed. If you haven’t installed Rust yet, follow the official [installation guide](https://www.rust-lang.org/tools/install).
+
+### Clone the Repository
+```sh
+git clone https://github.com/your-username/rust-tutorial-examples.git
+cd rust-tutorial-examples
+```
+
+
+## 📚 Learning Resources
+- [The Rust Programming Language Book](https://doc.rust-lang.org/book/)
+- [Rust Official Website](https://www.rust-lang.org/)
+- [Rust By Example](https://doc.rust-lang.org/stable/rust-by-example/)
+- [Rustlings (Beginner Exercises)](https://github.com/rust-lang/rustlings)
+
+## 🤝 Contributing
+This is a personal learning repository, but feel free to open an issue if you find an improvement or want to discuss Rust concepts!
+
