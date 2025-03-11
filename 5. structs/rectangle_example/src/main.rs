@@ -32,10 +32,24 @@ fn main() {
         area_3(&rect3)
     );
 
+    // // Define new struct with debugging method
+    let rect4 = Rect{
+        width: 30,
+        height: 50,
+    };
+
+    println!("rect4 is {rect4:?}");
 }
 
 // // Create struct to help label data
 struct Rectangle {
+    width: u32,
+    height: u32,
+}
+
+// // Included marco attemp to for debugging purposes
+#[derive(Debug)]
+struct Rect {
     width: u32,
     height: u32,
 }
