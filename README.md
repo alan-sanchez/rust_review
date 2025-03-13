@@ -9,6 +9,7 @@ This repo includes Rust code examples, exercises, and projects from **The Rust P
 - [The Rust Programming Language Book](https://doc.rust-lang.org/book/)
 - [Rust Official Website](https://www.rust-lang.org/)
 - [Rust By Example](https://doc.rust-lang.org/stable/rust-by-example/)
+- [Learn Rust Programming Video](https://www.youtube.com/watch?v=BpPEoZW5IiY)
 - [Rustlings (Beginner Exercises)](https://github.com/rust-lang/rustlings)
 
 ## 🤝 Contributing
