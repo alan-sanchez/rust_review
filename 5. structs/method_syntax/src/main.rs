@@ -25,6 +25,18 @@ fn main() {
         height: 50, // // Set the rectangle's height to 50
     };
 
+    let rect2 = Rectangle {
+        width: 10,
+        height: 40,
+    };
+    let rect3 = Rectangle {
+        width: 60,
+        height: 45,
+    };
+
+    // println!("Can rect1 hold rect2? {}", rect1.can_hold(&rect2));
+    // println!("Can rect1 hold rect3? {}", rect1.can_hold(&rect3));
+
     // // Print the area of the rectangle using the println! macro.
     // // The area is obtained by calling the area() method on rect1.
     println!(
