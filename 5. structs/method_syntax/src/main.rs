@@ -18,7 +18,9 @@ impl Rectangle {
         self.width * self.height
     }
 
-
+    // // Here we created a method that has the sane name as one of the struct's fields. 
+    // // This is because we want to demonstrate that Rust knows how to diferentiate between
+    // // the two
     fn width(&self) -> bool {
         self.width > 0
     }
@@ -31,8 +33,9 @@ fn main() {
         height: 50, // // Set the rectangle's height to 50
     };
 
+    // // Calling the `width()` method since we are using the paranthesis
     if rect1.width() {
-        println!("The rectangle has a nonzero width; it is {}", rect1.width)
+        println!("The rectangle has a nonzero width; it is {}", rect1.width) // Rust knows to call the field since it doesn't have parathesis
     }
     
     
