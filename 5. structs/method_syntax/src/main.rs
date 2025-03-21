@@ -7,14 +7,20 @@ struct Rectangle {
     height: u32,  // // Represents the height of the rectangle (an unsigned 32-bit integer)
 }
 
-// // The impl block is used to define methods associated with the Rectangle struct.
+// // The impl (implementation) block is used to define methods associated with the `Rectangle` struct.
 impl Rectangle {
     // // This method calculates the area of the rectangle.
-    // // It takes an immutable reference to self (&self), meaning it borrows the
-    // // instance without taking ownership, and returns a u32 value.
+    // // It takes an immutable reference to Self (&self), meaning it borrows the
+    // // instance without taking ownership, and returns a u32 value. This is because
+    // // we don want to modify/take ownership, we just want to read the data
     fn area(&self) -> u32 {
-        // Multiply the width by the height to compute the area.
+        // // Multiply the width by the height to compute the area.
         self.width * self.height
+    }
+
+
+    fn width(&self) -> bool {
+        self.width > 0
     }
 }
 
@@ -25,6 +31,11 @@ fn main() {
         height: 50, // // Set the rectangle's height to 50
     };
 
+    if rect1.width() {
+        println!("The rectangle has a nonzero width; it is {}", rect1.width)
+    }
+    
+    
     let rect2 = Rectangle {
         width: 10,
         height: 40,
