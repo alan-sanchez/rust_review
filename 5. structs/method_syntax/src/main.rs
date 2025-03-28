@@ -25,6 +25,7 @@ impl Rectangle {
         self.width > 0
     }
 
+    // // Implementing the can_hold method on Rectangle that takes another Rectangle instance as a parameter
     fn can_hold(&self, other: &Rectangle) -> bool {
         self.width > other.width && self.height > other.height
     }
@@ -42,7 +43,7 @@ fn main() {
         println!("The rectangle has a nonzero width; it is {}", rect1.width) // Rust knows to call the field since it doesn't have parathesis
     }
     
-    
+    // // Testing can_hold method 
     let rect2 = Rectangle {
         width: 10,
         height: 40,
